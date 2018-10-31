@@ -64,6 +64,7 @@ func (server *PlayerServer) showScore(response http.ResponseWriter, player strin
 	fmt.Fprint(response, score)
 }
 func (server *PlayerServer) processWin(response http.ResponseWriter, player string) {
+	fmt.Println("This is nothing!")
 	server.Store.RecordWin(player)
 	response.WriteHeader(http.StatusAccepted)
 }
