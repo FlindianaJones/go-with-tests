@@ -9,7 +9,6 @@ type MockeryPlayerStore struct {
 	mock.Mock
 }
 
-//this is a meaningless addition
 // GetLeague provides a mock function with given fields:
 func (_m *MockeryPlayerStore) GetLeague() []Player {
 	ret := _m.Called()
